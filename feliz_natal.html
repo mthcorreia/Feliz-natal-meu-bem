@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Natal</title>
+    <!-- Adicione o link para a fonte Allura -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&display=swap">
+
+    <style>
+        body {
+            background: linear-gradient(to top left, #000000, #993399); /* Degrade de preto para roxo */
+            color: #ffd700; /* Dourado para o texto */
+            font-family: 'Allura', cursive; /* Usando a fonte Allura para todo o texto */
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100vh;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em; /* Aumentando em 20% */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000; /* Adicionando uma sombra preta para melhorar a visibilidade */
+        }
+
+        p {
+            font-size: 1.8em; /* Aumentando em 20% */
+            text-shadow: 1px 1px 2px #000; /* Adicionando uma sombra preta para melhorar a visibilidade */
+        }
+
+        /* Adicionando mais fogos de artifício intensificados */
+        .firework {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc00; /* Amarelo para os fogos */
+            border-radius: 50%;
+            animation: explode 2s infinite; /* Reduzindo a velocidade para 2s */
+        }
+
+        @keyframes explode {
+            0%, 50% {
+                transform: translateY(0) translateX(0) rotate(0);
+                opacity: 0;
+            }
+            25% {
+                transform: translateY(-500px) translateX(500px) rotate(720deg);
+                opacity: 1;
+            }
+            75% {
+                transform: translateY(-500px) translateX(-500px) rotate(720deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Adicionando estilo para a linha com a imagem */
+        .line-with-image {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Adicionando margem à imagem para separá-la da linha de texto */
+        .line-with-image img {
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 30px; /* Adicionando borda arredondada à imagem */
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Natal, meu amor!</h1>
+    <p>Meu amor, faz tempinho que não te escrevo, mas quero te dizer, meu amor por ti cada dia fica maior. Você é um pilar na minha vida, obg por estar comigo na alegria e nas tristeza, eu amo seu sorriso, o jeito que me abraça, o jeito que nos provocamos, as brincadeiras que só nós entendemos, estar com vc é um oásis de paz na minha vida, eu te amo 🩷🩷🩷🩷 Obrigado por fazer esse natal diferente de tudo.</p>
+
+    <!-- Adicionando mais fogos de artifício intensificados -->
+    <div class="firework" style="top: 30%; left: 10%;"></div>
+    <div class="firework" style="top: 50%; left: 50%;"></div>
+    <div class="firework" style="top: 70%; left: 90%;"></div>
+    <div class="firework" style="top: 40%; left: 30%;"></div>
+    <div class="firework" style="top: 60%; left: 70%;"></div>
+
+    <div class="firework" style="top: 20%; left: 80%;"></div>
+    <div class="firework" style="top: 10%; left: 40%;"></div>
+    <div class="firework" style="top: 80%; left: 20%;"></div>
+    <div class="firework" style="top: 90%; left: 60%;"></div>
+    <div class="firework" style="top: 15%; left: 75%;"></div>
+
+    <div class="firework" style="top: 75%; left: 15%;"></div>
+    <div class="firework" style="top: 35%; left: 65%;"></div>
+    <div class="firework" style="top: 55%; left: 5%;"></div>
+    <div class="firework" style="top: 85%; left: 45%;"></div>
+    <div class="firework" style="top: 25%; left: 85%;"></div>
+
+    <!-- Linha com a imagem -->
+    <div class="line-with-image">
+        <img src="imagens/imagem.png" alt="Imagem">
+    </div>
+    
+    <!-- Adicione quantos fogos quiser ajustando as posições -->
+</body>
+</html>
